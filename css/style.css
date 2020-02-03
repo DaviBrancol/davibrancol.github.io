@@ -1,0 +1,777 @@
+/*=======================================================================
+* Template Name: Mahina
+* Template URI: tobedefined
+* Author: Davi Brancol Duarte
+* Author URI: http://davibrancol.github.io/
+* Description: Bootstrap 4 Portfolio Template
+* Version: 0;1
+* License: GPL v2 or later
+* License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+* Tags: HTML, TEMPLATE, PERSONAL, PORTFOLIO, DESIGN, CODING, DEVELOPER
+======================================================================= */
+
+/* CSS Summary
+------------------------------------------
+1. General
+2. Header
+2.1. Mobile Nav
+3. Section
+3.1. Section Home
+3.2. Section About Me
+3.3. Section Skills
+3.4. Section Services
+3.5. Section Portfolio
+------------------------------------------
+*/
+
+/*------------------------------------
+1. General
+------------------------------------*/
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.4rem;
+  color: #262626;
+  line-height: 1.857143;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/*------------------------------------
+2. Header
+------------------------------------*/
+
+main.main-left {
+  padding-left: 140px;
+}
+
+.main-header.main-header-left {
+  display: flex;
+  position: fixed;
+  width: 140px;
+  height: 100vh;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  z-index: 3;
+  top: 0;
+  background-color: white;
+}
+
+.main-header.main-header-left .navbar-brand {
+  padding: 0;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.main-header.main-header-left .navbar-brand img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-top: 15px;
+}
+
+.main-header.main-header-left .navbar-brand h1 {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.main-header.main-header-left .navigation-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  cursor: pointer;
+}
+
+.main-header.main-header-left .navigation-list li:first-child {
+  padding-top: 20px;
+}
+
+.main-header.main-header-left .navigation-list li i {
+  font-size: 2.4rem;
+}
+
+.main-header.main-header-left .navigation-list li p {
+  font-size: 1.5rem;
+  flex: 1;
+  margin-top: 5px;
+}
+
+.main-header.main-header-left .navigation-list li.nav-active {
+  border-bottom: 3px solid #7d2d88;
+  color: #7d2d88;
+}
+
+/*------------------------------------
+2.1. Navbar
+------------------------------------*/
+
+.mobile-nav {
+  display: none;
+}
+
+/*------------------------------------
+3. Section
+------------------------------------*/
+
+main .section {
+  min-height: 80vh;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding: 120px 0;
+  outline: none;
+}
+
+main .section .container .section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 15px;
+  font-size: 3.6rem;
+  color: #333;
+}
+
+main .section .container .section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 3px;
+  z-index: -1px;
+  background-color: #7d2d88;
+  width: 60px;
+}
+
+main .section .container .section-subtitle {
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 1.8rem;
+  color: #777;
+  margin-bottom: 45px;
+}
+
+main .section:nth-child(odd) {
+  background-color: #fff;
+}
+
+main .section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/*------------------------------------
+3.1. Section Home
+------------------------------------*/
+
+main .section-home {
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+}
+
+main .section-home .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  min-height: 100vh;
+}
+
+.section-home .container .introduce-header p {
+  font-size: 2.2rem;
+}
+
+.section-home .container .introduce-header h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  margin-top: 5px;
+  color: #333;
+}
+
+.section-home .container .introduce-header h1 span {
+  color: #7d2d88;
+  font-weight: bold;
+}
+
+.section-home .container .introduce-header h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.section-home .container .introduce-header h5 {
+  width: 80%;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.section-home .container .introduce-network {
+  margin-top: 30px;
+}
+
+.section-home .container .introduce-network i {
+  margin-right: 15px;
+  font-size: 2.4rem;
+}
+
+.section-home .container .introduce-image {
+  height: auto;
+  width: 400px;
+  position: relative;
+}
+
+.section-home .container .introduce-image img {
+  width: 90%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section-home .container .introduce-image div {
+  position: absolute;
+  background-color: #7d2d88;
+  bottom: -20px;
+  left: 20px;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section-home .container .introduce-typewritter {
+  display: flex;
+}
+
+.section-home .container .introduce-typewritter h3:first-child {
+  margin-right: 5px;
+}
+
+.section-home .container .introduce-typewritter h3:last-child {
+  text-decoration: underline;
+}
+
+.section-home .container .introduce-typewritter .wrap {
+  border-right: 0.06em solid #555;
+  padding-right: 6px;
+  animation: blinkwrapper 1s infinite;
+  margin-top: 10px;
+}
+
+@keyframes blinkwrapper {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/*------------------------------------
+3.2. Section About Me
+------------------------------------*/
+
+main .section-about-me {
+}
+
+main .section-about-me .about-me-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section-about-me .about-me-content img {
+  width: 450px;
+  height: 465px;
+  border-radius: 2%;
+}
+
+main .section-about-me .about-me-content .about-me-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 465px;
+  margin-left: 30px;
+}
+
+main .section-about-me .about-me-content .about-me-info h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+main .section-about-me .about-me-content .about-me-info h3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 3px;
+  z-index: -1px;
+  background-color: #7d2d88;
+  width: 80px;
+}
+
+.about-me-content .about-me-info .about-me-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about-me-content .about-me-info .about-me-info-container > div {
+  width: 50%;
+}
+
+.about-me-content .about-me-info .about-me-info-container > div > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-me-content
+  .about-me-info
+  .about-me-info-container
+  > div
+  > div
+  > p:first-child {
+  width: 25%;
+  color: black;
+  font-weight: bold;
+}
+
+.about-me-content .about-me-info .about-me-info-container > div > div > p {
+  width: 75%;
+}
+
+.about-me-content .about-me-info p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 15px;
+  color: #555;
+}
+
+.about-me-content .about-me-info .about-me-action {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.about-me-content .about-me-info .about-me-action .btn {
+  background-color: #7d2d88;
+  color: white;
+  border-radius: 5px;
+  margin-right: 15px;
+  padding: 15px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 160px;
+  outline: none;
+  border: 0;
+}
+
+.about-me-content .about-me-info .about-me-action .btn.btn-secondary-action {
+  background-color: transparent;
+  color: #7d2d88;
+  border: 1px solid #7d2d88;
+}
+
+/*------------------------------------
+3.3. Section Skills
+------------------------------------*/
+
+.section-skills .skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-skills .skills .soft-skills h2,
+.section-skills .skills .work-skills h2 {
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.section-skills .skills .soft-skills h2:after,
+.section-skills .skills .work-skills h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 3px;
+  z-index: -1px;
+  background-color: #7d2d88;
+  width: 60px;
+}
+
+.section-skills .skills .soft-skills p.first,
+.section-skills .skills .work-skills p.first {
+  margin-top: 30px;
+}
+
+.section-skills .skills p {
+  margin-top: 15px;
+  font-size: 2rem;
+  color: #555;
+}
+
+.section-skills ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.section-skills ul li {
+  border: 1px solid #7d2d88;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.section-skills ul li.active {
+  background-color: #7d2d88;
+}
+
+/*------------------------------------
+3.4. Section Services
+------------------------------------*/
+
+.section-services .services-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -15px 30px -15px;
+}
+
+.section-services .container .services-container:first-child {
+  margin-bottom: 30px;
+}
+
+.section-services .service-card {
+  width: 33.3333%;
+  background-color: white;
+  border: 1px solid #aaaaaa;
+  padding: 15px;
+  margin: 0 15px;
+}
+
+.section-services .service-card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section-services .service-card .card-header i {
+  width: 75px;
+  height: 75px;
+  font-size: 4rem;
+  color: #7d2d88;
+  padding: 15px;
+  border: 1px solid #7d2d88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-services .service-card .card-header > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.section-services .service-card .card-header > div > p:first-child {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.section-services .service-card .card-header > div > p {
+  font-size: 1.4rem;
+  color: #777;
+  font-weight: 300;
+}
+
+.section-services .service-card .card-body {
+  margin-top: 15px;
+}
+
+.section-services .service-card .card-body > p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: justify;
+  font-weight: 400;
+}
+
+/*------------------------------------
+3.5. Section Portfolio
+------------------------------------*/
+
+.portfolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -15px 30px -15px;
+}
+
+.portfolio-container .portfolio-card {
+  width: 33.3333%;
+  background-color: white;
+  border: 1px solid #aaaaaa;
+  padding: 15px;
+  margin: 0 15px;
+  height: 360px;
+  cursor: normal;
+}
+
+.portfolio-container .portfolio-card img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.5s ease-in;
+  transform: scale(1);
+}
+
+.portfolio-container .portfolio-card .portfolio-card-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.portfolio-container .portfolio-card .portfolio-card-content .portfolio-share {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  z-index: 2;
+}
+
+.portfolio-card .portfolio-card-content .portfolio-share > i {
+  color: white;
+  font-size: 2.2rem;
+  transition: all 0.5s ease-in;
+  opacity: 0;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.portfolio-card .portfolio-card-content .portfolio-share > i:first-child {
+  margin-right: 30px;
+}
+
+.portfolio-card .portfolio-card-content .portfolio-overlay {
+  background-color: #7d2d88;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.portfolio-container .portfolio-card .portfolio-card-content h3 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  font-size: 2.6rem;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  transform: scale(1);
+  user-select: none;
+}
+
+.portfolio-container .portfolio-card:hover {
+  border: 1px solid #7d2d88;
+}
+
+.portfolio-container
+  .portfolio-card:hover
+  .portfolio-card-content
+  .portfolio-overlay {
+  opacity: 0.6;
+}
+
+.portfolio-container .portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-container .portfolio-card:hover .portfolio-card-content h3 {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.portfolio-card:hover .portfolio-card-content .portfolio-share > i {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/*------------------------------------
+3.6. Section Contact
+------------------------------------*/
+
+.contact-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 -15px 30px -15px;
+}
+
+.contact-container h4 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 2.4rem;
+}
+
+.contact-container h5 {
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.contact-container p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.contact-container p span {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+.contact-container > form,
+.contact-container > div {
+  width: 40%;
+  padding: 15px;
+  margin-top: 45px;
+}
+
+.contact-container > div {
+  width: 60%;
+}
+
+.contact-container .contact-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #7d2d88;
+}
+
+.contact-container .form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact-container .contact-form input,
+.contact-container .contact-form textarea {
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  margin-bottom: 15px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 18px;
+  height: 42px;
+  border-radius: 0;
+}
+
+.contact-container .contact-form textarea {
+  resize: vertical;
+}
+
+.contact-container .contact-form .contact-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .contact-form .contact-header > input {
+  width: 50%;
+}
+
+.contact-container .contact-form button {
+  border: 0;
+  outline: none;
+  background-color: #7d2d88;
+  color: white;
+  border-radius: 5px;
+  margin-right: 15px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 120px;
+}
