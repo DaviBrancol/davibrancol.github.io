@@ -1,0 +1,279 @@
+@media (max-width: 771px) {
+  /*=======================================================================
+  * Template Name: Mahina
+  * Template URI: tobedefined
+  * Author: Davi Brancol Duarte
+  * Author URI: http://davibrancol.github.io/
+  * Description: Bootstrap 4 Portfolio Template
+  * Version: 0;1
+  * License: GPL v2 or later
+  * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  * Tags: HTML, TEMPLATE, PERSONAL, PORTFOLIO, DESIGN, CODING, DEVELOPER
+  ======================================================================= */
+
+  /* CSS Summary
+  ------------------------------------------
+  2. Header
+  2.1. Mobile Nav
+  3. Section
+  3.1. Section Home
+  3.2. Section About Me
+  3.3. Section Skills
+  3.4. Section Services
+  3.5. Section Portfolio
+  ------------------------------------------
+  */
+
+  /*------------------------------------
+  2. Header
+  ------------------------------------*/
+
+  main.main-left {
+    padding-left: 0;
+    transition: padding 0.2s linear;
+  }
+
+  .main-header.main-header-left {
+    left: -140px;
+    transition: left 0.2s linear;
+  }
+
+  body.mobile-open .main-header.main-header-left {
+    left: 0;
+  }
+
+  /*------------------------------------
+  2.1. Navbar
+  ------------------------------------*/
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 15px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+
+  .mobile-nav h1 {
+    font-size: 1.8rem;
+  }
+
+  .mobile-nav i {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+
+  #menu-toggle-open {
+    display: block;
+  }
+
+  #menu-toggle-closer {
+    display: none;
+  }
+
+  body.mobile-open #menu-toggle-open {
+    display: none;
+  }
+
+  body.mobile-open #menu-toggle-closer {
+    display: block;
+  }
+
+  /*------------------------------------
+  3. Section
+  ------------------------------------*/
+
+  main .section {
+    padding: 40px 0;
+  }
+
+  main .section .container .section-title {
+    font-size: 2.8rem;
+  }
+
+  main .section .container .section-subtitle {
+    font-size: 1.4rem;
+  }
+
+  /*------------------------------------
+  3.1. Section Home
+  ------------------------------------*/
+
+  main .section-home {
+    min-height: 100vh;
+  }
+
+  main .section-home .container {
+    min-height: 100vh;
+  }
+
+  .section-home .container .introduce-header p {
+    font-size: 2rem;
+  }
+
+  .section-home .container .introduce-header h1 {
+    font-size: 3.4rem;
+  }
+
+  .section-home .container .introduce-header h3 {
+    font-size: 1.7rem;
+  }
+
+  .section-home .container .introduce-header h5 {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .section-home .container .introduce-network i {
+    font-size: 2.8rem;
+  }
+
+  .section-home .container .introduce-image {
+    display: none;
+  }
+
+  /*------------------------------------
+  3.2. Section About Me
+  ------------------------------------*/
+
+  main .section-about-me .about-me-content {
+    flex-direction: column;
+  }
+
+  main .section-about-me .about-me-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  main .section-about-me .about-me-content .about-me-info {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  main .section-about-me .about-me-content .about-me-info h3 {
+    font-size: 2.2rem;
+  }
+
+  .about-me-content .about-me-info p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+
+  .about-me-content .about-me-info .about-me-info-container {
+    flex-direction: column;
+  }
+
+  .about-me-content .about-me-info .about-me-info-container > div {
+    width: 100%;
+  }
+
+  /*------------------------------------
+  3.3. Section Skills
+  ------------------------------------*/
+
+  .section-skills .skills {
+    flex-direction: column;
+  }
+
+  .section-skills .skills .soft-skills,
+  .section-skills .skills .work-skills {
+    width: 100%;
+  }
+
+  .section-skills .skills .soft-skills h2,
+  .section-skills .skills .work-skills h2 {
+    font-size: 2.8rem;
+  }
+
+  .section-skills .skills .work-skills h2 {
+    margin-top: 30px;
+  }
+
+  .section-skills ul li {
+    width: calc(100% / 10);
+    height: 28px;
+    margin-right: 6px;
+  }
+
+  /*------------------------------------
+  3.4. Section Services
+  ------------------------------------*/
+
+  .section-services .services-container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .section-services .service-card {
+    width: 100%;
+    margin: 0 15px 15px 15px;
+  }
+
+  .section-services .service-card .card-header > div {
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  /*------------------------------------
+  3.5. Section Portfolio
+  ------------------------------------*/
+
+  .portfolio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .portfolio-container .portfolio-card {
+    width: 100%;
+    margin: 0 15px 15px 15px;
+    height: 350px;
+  }
+
+  /*------------------------------------
+  3.6. Section Contact
+  ------------------------------------*/
+
+  .contact-container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .contact-container h4 {
+    font-size: 2.2rem;
+  }
+
+  .contact-container h5 {
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+
+  .contact-container p {
+    font-size: 1.4rem;
+  }
+
+  .contact-container p span {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  .contact-container > form,
+  .contact-container > div {
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .contact-container .contact-form button {
+    width: 100%;
+  }
+}
