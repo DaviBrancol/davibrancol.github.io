@@ -572,7 +572,7 @@ main .section-about-me .about-me-content .about-me-info h3:after {
 }
 
 .portfolio-container .portfolio-card {
-  width: 33.3333%;
+  width: calc(33% - 26px);
   background-color: white;
   border: 1px solid #aaaaaa;
   padding: 15px;
