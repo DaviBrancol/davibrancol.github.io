@@ -1,0 +1,283 @@
+/*=======================================================================
+* Template Name: Mahina
+* Template URI: tobedefined
+* Author: Davi Brancol Duarte
+* Author URI: http://davibrancol.github.io/
+* Description: Bootstrap 4 Portfolio Template
+* Version: 0;1
+* License: GPL v2 or later
+* License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+* Tags: HTML, TEMPLATE, PERSONAL, PORTFOLIO, DESIGN, CODING, DEVELOPER
+======================================================================= */
+
+/* CSS Summary
+------------------------------------------
+1. General
+2. Header
+2.1. Mobile Nav
+3. Section
+3.1. Section Home
+3.2. Section About Me
+3.3. Section Skills
+3.4. Section Services
+3.5. Section Portfolio
+------------------------------------------
+*/
+
+/*
+  Lighter: #df549b
+  Light: #dd368c
+  Normal: #721541
+  Dark: #4f0c2f
+  Complement: #2d1b2b
+  Black: #191629
+  White: #eee
+*/
+
+/*------------------------------------
+2. Header
+------------------------------------*/
+
+body.dark-theme .main-header.main-header-left {
+  background-color: #0f0d1b;
+}
+
+body.dark-theme .main-header.main-header-left .navbar-brand h1 {
+  color: #eee;
+}
+
+body.dark-theme .main-header.main-header-left .navigation-list li > a {
+  border-bottom: 1px solid #232038;
+  color: #eee;
+}
+
+body.dark-theme
+  .main-header.main-header-left
+  .navigation-list
+  li
+  > a.nav-active {
+  border-bottom: 3px solid #df549b;
+  color: #df549b;
+  font-weight: bold;
+}
+
+/*------------------------------------
+2.1. Navbar
+------------------------------------*/
+
+body.dark-theme .mobile-nav {
+  display: none;
+}
+
+/*------------------------------------
+3. Section
+------------------------------------*/
+
+body.dark-theme main .section .container .section-title {
+  color: #eee;
+}
+
+body.dark-theme main .section .container .section-title:after {
+  background-color: #dd368c;
+}
+
+body.dark-theme main .section .container .section-subtitle {
+  color: #aaa;
+}
+
+body.dark-theme main .section:nth-child(odd) {
+  background-color: #191629;
+}
+
+body.dark-theme main .section:nth-child(even) {
+  background-color: #221f36;
+}
+
+/*------------------------------------
+3.1. Section Home
+------------------------------------*/
+
+body.dark-theme main .section-home {
+  color: white;
+}
+
+body.dark-theme main .section-home .container {
+  color: #eee;
+}
+
+body.dark-theme .section-home .container .introduce-header h1 {
+  color: white;
+}
+
+body.dark-theme .section-home .container .introduce-header h1 span {
+  color: #dd368c;
+}
+
+body.dark-theme .section-home .container .introduce-image div {
+  background-color: #dd368c;
+}
+
+body.dark-theme .section-home .container .introduce-typewritter .wrap {
+  border-right: 0.06em solid white;
+}
+
+/*------------------------------------
+3.2. Section About Me
+------------------------------------*/
+
+body.dark-theme main .section-about-me .about-me-content .about-me-info h3 {
+  color: white;
+}
+
+body.dark-theme
+  main
+  .section-about-me
+  .about-me-content
+  .about-me-info
+  h3:after {
+  background-color: #dd368c;
+}
+
+body.dark-theme
+  .about-me-content
+  .about-me-info
+  .about-me-info-container
+  > div
+  > div
+  > p:first-child {
+  color: white;
+}
+
+body.dark-theme .about-me-content .about-me-info p {
+  color: #ccc;
+}
+
+body.dark-theme .about-me-content .about-me-info .about-me-action .btn {
+  background-color: #dd368c;
+  color: white;
+}
+
+body.dark-theme
+  .about-me-content
+  .about-me-info
+  .about-me-action
+  .btn.btn-secondary-action {
+  background-color: transparent;
+  color: #dd368c;
+  border: 1px solid #dd368c;
+}
+
+/*------------------------------------
+3.3. Section Skills
+------------------------------------*/
+
+body.dark-theme .section-skills .skills .soft-skills h2,
+body.dark-theme .section-skills .skills .work-skills h2 {
+  color: #eee;
+}
+
+body.dark-theme .section-skills .skills .soft-skills h2:after,
+body.dark-theme .section-skills .skills .work-skills h2:after {
+  background-color: #dd368c;
+}
+
+body.dark-theme .section-skills .skills p {
+  color: #ccc;
+}
+
+body.dark-theme .section-skills ul li {
+  border: 1px solid #dd368c;
+}
+
+body.dark-theme .section-skills ul li.active {
+  background-color: #dd368c;
+}
+
+/*------------------------------------
+3.4. Section Services
+------------------------------------*/
+
+body.dark-theme .section-services .service-card {
+  background-color: #191629;
+  border: 1px solid #eee;
+}
+
+body.dark-theme .section-services .service-card .card-header i {
+  color: #dd368c;
+  border: 1px solid #dd368c;
+}
+
+body.dark-theme
+  .section-services
+  .service-card
+  .card-header
+  > div
+  > p:first-child {
+  color: #eee;
+}
+
+body.dark-theme .section-services .service-card .card-header > div > p {
+  color: #ccc;
+}
+
+body.dark-theme .section-services .service-card .card-body > p {
+  color: #eee;
+}
+
+/*------------------------------------
+3.5. Section Portfolio
+------------------------------------*/
+
+body.dark-theme .portfolio-container .portfolio-card {
+  background-color: white;
+}
+
+body.dark-theme .portfolio-card .portfolio-card-content .portfolio-share > i {
+  color: white;
+}
+
+body.dark-theme .portfolio-card .portfolio-card-content .portfolio-overlay {
+  background-color: #dd368c;
+}
+
+body.dark-theme
+  .portfolio-container
+  .portfolio-card
+  .portfolio-card-content
+  h3 {
+  color: white;
+}
+
+body.dark-theme .portfolio-container .portfolio-card:hover {
+  border: 1px solid #dd368c;
+}
+
+/*------------------------------------
+3.6. Section Contact
+------------------------------------*/
+
+body.dark-theme .contact-container h4 {
+  color: #ccc;
+}
+
+body.dark-theme .contact-container h5 {
+  color: #aaa;
+}
+
+body.dark-theme .contact-container p {
+  color: #ccc;
+}
+
+body.dark-theme .contact-container .contact-form {
+  color: #dd368c;
+}
+
+body.dark-theme .contact-container .contact-form input,
+body.dark-theme .contact-container .contact-form textarea {
+  border-bottom: 1px solid #ccc;
+}
+
+body.dark-theme .contact-container .contact-form button {
+  background-color: #dd368c;
+  color: white;
+}

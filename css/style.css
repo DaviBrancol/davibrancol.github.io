@@ -2,8 +2,8 @@
 * Template Name: Mahina
 * Template URI: tobedefined
 * Author: Davi Brancol Duarte
-* Author URI: http://davibrancol.github.io/
-* Description: Bootstrap 4 Portfolio Template
+* Author URI: http://davibrancol.com.br/
+* Description: Personal Portfolio Template
 * Version: 0;1
 * License: GPL v2 or later
 * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -120,10 +120,6 @@ main.main-left {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 15px 20px;
-  border-bottom: 1px solid #eee;
-  color: #555;
-  cursor: pointer;
 }
 
 .main-header.main-header-left .navigation-list li:first-child {
@@ -140,7 +136,17 @@ main.main-left {
   margin-top: 5px;
 }
 
-.main-header.main-header-left .navigation-list li.nav-active {
+.main-header.main-header-left .navigation-list li > a {
+  border-bottom: 1px solid #eee;
+  color: #555;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.main-header.main-header-left .navigation-list li > a.nav-active {
   border-bottom: 3px solid #7d2d88;
   color: #7d2d88;
 }
@@ -572,7 +578,7 @@ main .section-about-me .about-me-content .about-me-info h3:after {
 }
 
 .portfolio-container .portfolio-card {
-  width: calc(33% - 26px);
+  width: calc(33% - 30px);
   background-color: white;
   border: 1px solid #aaaaaa;
   padding: 15px;

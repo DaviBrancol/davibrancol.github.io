@@ -73,7 +73,7 @@ jQuery(document).ready(function($) {
   /*-------------------------------------
     Navbar scrolling
     -------------------------------------*/
-  var $navigationLinks = $('#navigation > li')
+  var $navigationLinks = $('#navigation > li > a')
   var $sections = $(
     $('.section')
       .get()
@@ -83,7 +83,9 @@ jQuery(document).ready(function($) {
   var sectionIdTonavigationLink = {}
   $sections.each(function() {
     var id = $(this).attr('id')
-    sectionIdTonavigationLink[id] = $('#navigation > li[href=\\#' + id + ']')
+    sectionIdTonavigationLink[id] = $(
+      '#navigation > li > a[href=\\#' + id + ']'
+    )
   })
 
   function highlightNavigation() {
@@ -109,11 +111,10 @@ jQuery(document).ready(function($) {
   /*-------------------------------------
     Smooth Scroll
     -------------------------------------*/
-  $('#navigation > li')
+  $('#navigation > li > a')
     .not('[href="#"]')
     .not('[href="#0"]')
     .on('click', function(event) {
-      console.log('Entrou')
       var target = $(this).attr('href')
       console.log(target)
       var element = $(target)
