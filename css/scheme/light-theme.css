@@ -65,8 +65,16 @@ body.light-theme
 2.1. Navbar
 ------------------------------------*/
 
-body.light-theme .mobile-nav {
-  display: none;
+body.dark-theme .mobile-nav {
+  background-color: white;
+}
+
+body.dark-theme .mobile-nav h1 {
+  color: #333;
+}
+
+body.dark-theme .mobile-nav i {
+  color: #333;
 }
 
 /*------------------------------------

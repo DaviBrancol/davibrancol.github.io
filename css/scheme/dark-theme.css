@@ -66,7 +66,15 @@ body.dark-theme
 ------------------------------------*/
 
 body.dark-theme .mobile-nav {
-  display: none;
+  background-color: #0f0d1b;
+}
+
+body.dark-theme .mobile-nav h1 {
+  color: white;
+}
+
+body.dark-theme .mobile-nav i {
+  color: white;
 }
 
 /*------------------------------------
