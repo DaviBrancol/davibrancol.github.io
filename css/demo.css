@@ -1,0 +1,142 @@
+/**
+  * Product: Elune
+  * Description: Coming Soon Template
+  * Author: Davi Brancol
+  * Author URL: https://themeforest.net/user/brancol
+  * Version: v1.0.0
+  * License: Licensed by Themeforest - Themeforest Licenses can be found at https://themeforest.net/licenses
+  */
+
+/*----------- Indexes -----------*/
+
+/**
+ * Demo
+ */
+
+/*------------------------------------
+  Demo
+------------------------------------*/
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.4rem;
+  color: #262626;
+  line-height: 1.857143;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+header > h1 {
+  padding: 30px 0;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.demo-body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.demo-body {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 60px;
+}
+
+main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > h2 {
+  margin-top: 60px;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #718096;
+}
+
+main > h1 {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #2d3748;
+}
+
+main > div {
+  margin-top: 60px;
+}
+
+main > div h1 {
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: #718096;
+}
+
+main > div a:hover {
+  text-decoration: none;
+}
+
+main > div img {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+main > div img:hover {
+  width: 100%;
+  height: auto;
+}

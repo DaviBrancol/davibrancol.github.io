@@ -1,0 +1,106 @@
+/**
+  * Product: Elune
+  * Description: Coming Soon Template
+  * Author: Davi Brancol
+  * Author URL: https://themeforest.net/user/brancol
+  * Version: v1.0.0
+  * License: Licensed by Themeforest - Themeforest Licenses can be found at https://themeforest.net/licenses
+  */
+
+/*----------- Indexes -----------*/
+
+/**
+ * General
+ * Header
+ * Navbar
+ * Introduce Header
+ * Section
+  * Main
+  * Services
+  * Contact
+ * Settings
+ */
+
+/*------------------------------------
+  General
+------------------------------------*/
+
+#body.color-orange main {
+  background-color: #ff9472;
+}
+
+#body.color-orange main.main-gradient {
+  background-image: linear-gradient(135deg, #ff9472, #973314);
+}
+
+/*------------------------------------
+  Header
+------------------------------------*/
+
+#body.color-orange header h1:after {
+  background-color: #ff9472;
+}
+
+/*------------------------------------
+  Navbar
+------------------------------------*/
+
+#body.color-orange navbar ul li a:hover,
+#body.color-orange navbar ul li a:focus {
+  color: #ff9472;
+}
+
+/*------------------------------------
+  Introduce Header
+------------------------------------*/
+
+#body.color-orange .introduce-header button:hover {
+  border: 1px solid #ff9472;
+  background-color: #ff9472;
+  color: white;
+}
+
+/*------------------------------------
+  Copyright
+------------------------------------*/
+
+#body.color-orange .site-copyright a:hover,
+#body.color-orange .site-copyright a:focus {
+  color: #ff9472;
+}
+
+/*------------------------------------
+  Section - Main
+------------------------------------*/
+
+#body.color-orange .elune-sidearea .section h1:after {
+  background-color: #ff9472;
+}
+
+/*------------------------------------
+  Section - Services
+------------------------------------*/
+
+#body.color-orange .elune-sidearea .section.section-services .service-item i {
+  color: #ff9472;
+}
+
+/*------------------------------------
+  Section - Contact
+------------------------------------*/
+
+#body.color-orange .elune-sidearea .section.section-contact .contact-container i {
+  color: #ff9472;
+}
+
+#body.color-orange .elune-sidearea .section.section-contact .contact-form button {
+  background-color: #ff9472;
+}
+
+/*------------------------------------
+  Settings
+------------------------------------*/
+
+.color.color-orange {
+  background-color: #ff9472;
+}
