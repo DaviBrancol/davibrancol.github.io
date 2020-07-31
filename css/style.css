@@ -120,7 +120,7 @@ main {
 }
 
 .main-image {
-  background-image: url('/images/background/1.jpg');
+  background-image: url('../images/background/1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -227,7 +227,7 @@ nav > ul > li:hover::before {
 
 .main-background {
   background-color: #111;
-  background-image: url('/images/main-photo.png');
+  background-image: url('../images/main-photo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
