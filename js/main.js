@@ -127,5 +127,5 @@ jQuery(document).ready(function ($) {
     Preloader
   ------------------------------------*/
 
-  $('.preloader').delay(1000).fadeOut('slow')
+  $('.preloader').delay(300).fadeOut('fast')
 })
