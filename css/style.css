@@ -45,13 +45,18 @@ body {
   box-sizing: border-box;
 }
 
+::placeholder {
+  color: #111;
+}
+
 textarea,
 input,
 button {
   outline: none !important;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   padding: 0;
 }
@@ -73,7 +78,9 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   line-height: inherit;
@@ -82,7 +89,9 @@ h4 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -212,7 +221,7 @@ nav > ul > li:hover::before {
 
 .main-background {
   background-color: #111;
-  background-image: url('../images/main-photo.png');
+  background-image: url('../images/main-photo.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -226,6 +235,28 @@ nav > ul > li:hover::before {
   transition: all 0.6s ease-in-out;
   z-index: 10000;
   background-color: #050505;
+}
+
+.transition-overlay.transition-fadeIn {
+  top: 0;
+  bottom: auto;
+}
+
+.transition-overlay.transition-fadeIn-active {
+  top: auto;
+  bottom: 0;
+  height: 100vh;
+}
+
+.transition-overlay.transition-fadeOut {
+  bottom: 0;
+  top: auto;
+}
+
+.transition-overlay.transition-fadeOut-active {
+  bottom: auto;
+  top: 0;
+  height: 100vh;
 }
 
 /*------------------------------------
@@ -346,6 +377,84 @@ nav > ul > li:hover::before {
   width: 100%;
 }
 
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide .slick-image {
+  display: block;
+}
+
+.slick-slide .slick-image-mobile {
+  display: none;
+}
+
+.slick-portfolio .slick-slide {
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-portfolio .slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-arrow {
+  border: 1px solid #ccc;
+  font-size: 2rem;
+  color: #ccc;
+  position: absolute;
+  right: 0;
+  top: -11rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.slick-arrow-left {
+  right: 6.5rem;
+}
+
+.slick-arrow-portfolio {
+  right: -10px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.slick-arrow-portfolio.slick-arrow-left {
+  right: auto;
+  left: -10px;
+  z-index: 20;
+  transform: translate(0%, -50%);
+}
+
 /*------------------------------------
   Circle Animation
 ------------------------------------ */
@@ -388,6 +497,10 @@ nav > ul > li:hover::before {
   height: 600px;
   left: -300px;
   bottom: -300px;
+}
+
+.shade1 {
+  opacity: 0.3;
 }
 .shade2 {
   opacity: 0.5;
