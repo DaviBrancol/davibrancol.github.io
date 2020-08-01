@@ -233,10 +233,6 @@ nav > ul > li:hover::before {
   background-size: cover;
 }
 
-.main-page h1 {
-  font-size: 6.5rem;
-}
-
 /*------------------------------------
   Transition Overlay
 ------------------------------------ */
@@ -385,11 +381,18 @@ nav > ul > li:hover::before {
 ------------------------------------ */
 .slider {
   width: 100%;
-  margin: auto -20px;
 }
 
 .slick-slide {
   margin: 0px 20px;
+}
+
+.slick-slide .slick-image {
+  display: block;
+}
+
+.slick-slide .slick-image-mobile {
+  display: none;
 }
 
 .slick-portfolio .slick-slide {

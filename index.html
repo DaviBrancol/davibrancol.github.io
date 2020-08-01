@@ -11,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="64x64" href="./images/favicon/favicon-64x.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="./images/favicon/icon-128.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./images/favicon/icon-64.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/icon-32.png" />
     <!-- Montserrat and Rubik Wen Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Rubik:300,400,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -54,27 +54,30 @@
     <div class="preloader">
       <img src="./images/preloader-colorfull.gif" alt="Preloader Gif" />
     </div>
-    <header class="w-full top-0 left-0 fixed z-50 border-b border-gray-800">
+    <header class="p-6 w-full top-0 left-0 fixed z-50 border-b border-gray-800 md:p-0">
       <div class="container mx-auto flex justify-between items-center">
-        <img src="./images/logo.png" alt="Logo" class="h-20" />
-        <nav>
-          <ul class="inline-flex space-x-5 items-center justify-center text-3xl text-gray-100">
-            <li data-modal="about" class="cursor-pointer relative py-10 px-4">
+        <img src="./images/logo-mobile.png" alt="Logo" class="block md:hidden h-16" />
+        <img src="./images/logo.png" alt="Logo" class="hidden md:block h-20" />
+        <i id="hamburger-open" class="fa fa-bars block text-3xl md:hidden text-white"></i>
+        <i id="hamburger-close" class="fa fa-times block text-3xl md:hidden text-white hidden"></i>
+        <nav class="w-full md:w-auto">
+          <ul class="w-full inline-flex md:space-x-5 items-start justify-center text-3xl text-gray-100 md:w-auto md:items-center">
+            <li data-modal="about" class="cursor-pointer relative py-10 px-10 md:ml-0">
               About
             </li>
-            <li data-modal="services" class="cursor-pointer relative py-10 px-4">
+            <li data-modal="services" class="cursor-pointer relative py-10 px-10 md:ml-0">
               Services
             </li>
-            <li data-modal="portfolio" class="cursor-pointer relative py-10 px-4">
+            <li data-modal="portfolio" class="cursor-pointer relative py-10 px-10 md:ml-0">
               Portfolio
             </li>
-            <li data-modal="node" class="cursor-pointer relative py-10 px-4">
+            <li data-modal="node" class="cursor-pointer relative py-10 px-10 md:ml-0">
               Node
             </li>
-            <li data-modal="medium" class="cursor-pointer relative py-10 px-4">
+            <li data-modal="medium" class="cursor-pointer relative py-10 px-10 md:ml-0">
               Medium
             </li>
-            <li data-modal="contact" class="cursor-pointer relative py-10 px-4">
+            <li data-modal="contact" class="cursor-pointer relative py-10 px-10 md:ml-0">
               Contact
             </li>
           </ul>
@@ -84,9 +87,9 @@
     <!-- Main Content -->
     <main class="main-page w-full h-screen relative z-10 bg-gray-900">
       <div class="container mx-auto relative z-40 flex flex-col items-start h-screen justify-center">
-        <div class="mt-24 w-6/12 flex flex-col items-start justify-center">
-          <h1 class="uppercase font-semibold leading-tight">Even the <span class="font-bold text-primary-500">smallest</span> stone can start an avalanche</h1>
-          <h3 class="text-3xl text-gray-100 border-l-4 pl-10 border-primary-500 leading-loose tracking-wider mt-20">
+        <div class="p-6 w-full flex flex-col items-start justify-center md:w-6/12 md:p-0 md:mt-24">
+          <h1 class="text-6xl uppercase font-semibold leading-relaxed md:leading-tight md:text-7xl">Even the <span class="font-bold text-primary-500">smallest</span> stone can start an avalanche</h1>
+          <h3 class="text-3xl text-gray-100 border-l-4 pl-10 border-primary-500 leading-loose tracking-wider mt-20 md:text-3xl">
             I'm a Fullstack Webmaster focused in the art of design and user experience. Let's build something together.
           </h3>
           <div class="inline-flex space-x-20 text-5xl mt-20 text-gray-100">
@@ -118,85 +121,85 @@
       <div class="main-overlay z-20 w-full h-screen top-0 left-0 absolute"></div>
     </main>
     <!-- Simple About -->
-    <div id="about" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 pb-48">
+    <div id="about" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 p-10 md:pb-48">
       <div class="container flex justify-center items-start mx-auto relative">
-        <div class="flex flex-col items-center justify-start page-title">
-          <h3 class="text-gray-700 text-12xl font-bold tracking-widest uppercase">My Journey</h3>
-          <p class="text-gray-100 text-8xl font-bold tracking-wider uppercase">About me</p>
+        <div class="mt-24 flex flex-col items-center justify-start page-title md:mt-0">
+          <h3 class="text-6xl text-gray-700 font-bold tracking-widest uppercase md:text-12xl">My Journey</h3>
+          <p class="text-5xl text-gray-100 font-bold tracking-wider uppercase md:text-8xl">About me</p>
         </div>
-        <i data-modal="about" class="absolute right-0 cursor-pointer menu-close fa fa-times text-6xl text-gray-200"></i>
+        <i data-modal="about" class="absolute right-0 cursor-pointer menu-close fa fa-times text-3xl text-gray-200 md:text-6xl"></i>
       </div>
-      <div class="container flex justify-between items-start mx-auto mt-20">
-        <div class="w-6/12 flex flex-col mr-10">
+      <div class="container flex flex-col-reverse justify-between items-start mx-auto mt-20 md:flex-row">
+        <div class="mt-10 w-full flex flex-col md:mt-0 md:mr-10 md:w-6/12">
           <div class="section-title relative">
-            <h1 class="text-6xl text-gray-200 font-bold">Education</h1>
+            <h1 class="text-5xl text-gray-200 font-bold md:text-6xl">Education</h1>
           </div>
-          <div class="mt-16 relative pb-16 resume-item">
+          <div class="mt-6 relative pb-16 resume-item md:mt-16">
             <div class="flex w-full justify-start items-center">
-              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900">2016 - 2019</p>
-              <p class="ml-4 text-gray-500 tracking-wider">Univesity Mackenzie</p>
+              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900 text-xl md:text-2xl">2016 - 2019</p>
+              <p class="ml-4 text-gray-500 tracking-wider text-xl md:text-2xl">Univesity Mackenzie</p>
             </div>
-            <h3 class="mt-8 pl-16 text-4xl text-white font-semibold">Bachelor of Computer Science</h3>
-            <p class="pl-16 text-2xl text-gray-300 font-normal mt-2 leading-loose">
+            <h3 class="mt-8 pl-16 text-3xl text-white font-semibold md:text-4xl">Bachelor of Computer Science</h3>
+            <p class="text-xl pl-16 text-gray-300 font-normal mt-2 leading-loose md:text-2xl">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid voluptatibus dolorem provident dolore quo animi similique.
             </p>
           </div>
         </div>
-        <div class="w-6/12 flex flex-col ml-10">
+        <div class="w-full flex flex-col md:mr-10 md:w-6/12">
           <div class="section-title relative">
-            <h1 class="text-6xl text-gray-200 font-bold">Experience</h1>
+            <h1 class="text-5xl text-gray-200 font-bold md:text-6xl">Experience</h1>
           </div>
-          <div class="mt-16 relative pb-16 resume-item">
+          <div class="mt-6 mt-16 relative pb-16 resume-item">
             <div class="flex w-full justify-start items-center">
-              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900">2020 - Current</p>
-              <p class="ml-4 text-gray-500 tracking-wider">Janno</p>
+              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900 text-xl md:text-2xl">2020 - Current</p>
+              <p class="ml-4 text-gray-500 tracking-wider text-xl md:text-2xl">Janno</p>
             </div>
-            <h3 class="mt-8 pl-16 text-4xl text-white font-semibold">React and Nest Fullstack Developer</h3>
-            <p class="pl-16 text-2xl text-gray-300 font-normal mt-2 leading-loose">
+            <h3 class="mt-8 pl-16 text-3xl text-white font-semibold md:text-4xl">React and Nest Fullstack Developer</h3>
+            <p class="pl-16 text-xl text-gray-300 font-normal mt-2 leading-loose md:text-2xl">
               Janno is a platform made for planning the end of your life, storing your documents and wills for your family, friends and lawyers. Here, I developed the product from it's
               beggining, developing the architecture for the back-end and all the layouts of the front-end
             </p>
           </div>
-          <div class="relative pb-16 resume-item">
+          <div class="mt-6 relative pb-16 resume-item">
             <div class="flex w-full justify-start items-center">
-              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900">2020 - Current</p>
-              <p class="ml-4 text-gray-500 tracking-wider">Braccus</p>
+              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900 text-xl md:text-2xl">2020 - Current</p>
+              <p class="ml-4 text-gray-500 tracking-wider text-xl md:text-2xl">Braccus</p>
             </div>
-            <h3 class="mt-8 pl-16 text-4xl text-white font-semibold">Frontend Designer</h3>
-            <p class="pl-16 text-2xl text-gray-300 font-normal mt-2 leading-loose">
+            <h3 class="mt-8 pl-16 text-3xl text-white font-semibold md:text-4xl">Frontend Designer</h3>
+            <p class="pl-16 text-xl text-gray-300 font-normal mt-2 leading-loose md:text-2xl">
               Braccus is a platform created to track significant KPIs of your advertising, clients and payment modules. Here, I developed the landpage layout and all application pages,
               focusing on a simple and direct UX with significant impact.
             </p>
           </div>
-          <div class="relative pb-16 resume-item">
+          <div class="mt-6 relative pb-16 resume-item">
             <div class="flex w-full justify-start items-center">
-              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900">2018 - 2020</p>
-              <p class="ml-4 text-gray-500 tracking-wider">TEZA</p>
+              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900 text-xl md:text-2xl">2018 - 2020</p>
+              <p class="ml-4 text-gray-500 tracking-wider text-xl md:text-2xl">TEZA</p>
             </div>
-            <h3 class="mt-8 pl-16 text-4xl text-white font-semibold">Entrepreneur and CTO</h3>
-            <p class="pl-16 text-2xl text-gray-300 font-normal mt-2 leading-loose">
+            <h3 class="mt-8 pl-16 text-3xl text-white font-semibold md:text-4xl">Entrepreneur and CTO</h3>
+            <p class="pl-16 text-xl text-gray-300 font-normal mt-2 leading-loose md:text-2xl">
               TEZA was a platform developed for helping newly changed people in finding the perfect architect for developing their home project. Here, I learned much about how to create a
               business from the paper and the difficulties of growing your company.
             </p>
           </div>
-          <div class="relative pb-16 resume-item">
+          <div class="mt-6 relative pb-16 resume-item">
             <div class="flex w-full justify-start items-center">
-              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900">2017 - 2018</p>
-              <p class="ml-4 text-gray-500 tracking-wider">Apple Developer Academy</p>
+              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900 text-xl md:text-2xl">2017 - 2018</p>
+              <p class="ml-4 text-gray-500 tracking-wider text-xl md:text-2xl">Apple Developer Academy</p>
             </div>
-            <h3 class="mt-8 pl-16 text-4xl text-white font-semibold">iOS Developer</h3>
-            <p class="pl-16 text-2xl text-gray-300 font-normal mt-2 leading-loose">
+            <h3 class="mt-8 pl-16 text-3xl text-white font-semibold md:text-4xl">iOS Developer</h3>
+            <p class="pl-16 text-xl text-gray-300 font-normal mt-2 leading-loose md:text-2xl">
               Apple Developer Academy is a project developed between the University Mackenzie and the Apple Inc. There I learned how to created an app and how to developed a new idea from it's
               standards. This project gave me the kick start for my career.
             </p>
           </div>
-          <div class="relative pb-16 resume-item">
+          <div class="mt-6 relative pb-16 resume-item">
             <div class="flex w-full justify-start items-center">
-              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900">2016 - Current</p>
-              <p class="ml-4 text-gray-500 tracking-wider">Webdesign Freelancer</p>
+              <p class="border-2 rounded-full text-gray-400 border-primary-500 px-5 pt-2 pb-1 flex items-baseline justify-center bg-gray-900 text-xl md:text-2xl">2016 - Current</p>
+              <p class="ml-4 text-gray-500 tracking-wider text-xl md:text-2xl">Webdesign Freelancer</p>
             </div>
-            <h3 class="mt-8 pl-16 text-4xl text-white font-semibold">Webdesign and UX</h3>
-            <p class="pl-16 text-2xl text-gray-300 font-normal mt-2 leading-loose">
+            <h3 class="mt-8 pl-16 text-3xl text-white font-semibold md:text-4xl">Webdesign and UX</h3>
+            <p class="pl-16 text-xl text-gray-300 font-normal mt-2 leading-loose md:text-2xl">
               Since I have this passion for design, I found myself doing freelances for many companies, focusing on improving their design pattern, SEO optimizations, mobile responsivity, and
               many other inside features.
             </p>
@@ -205,15 +208,15 @@
       </div>
     </div>
     <!-- Services -->
-    <div id="services" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 pb-48">
+    <div id="services" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 p-10 md:pb-48">
       <div class="container flex justify-center items-start mx-auto relative">
-        <div class="flex flex-col items-center justify-start page-title">
-          <h3 class="text-gray-700 text-12xl font-bold tracking-widest uppercase">Need Something?</h3>
-          <p class="text-gray-100 text-8xl font-bold tracking-wider uppercase">Services</p>
+        <div class="mt-24 flex flex-col items-center justify-start page-title md:mt-0">
+          <h3 class="text-6xl text-gray-700 font-bold tracking-widest uppercase md:text-12xl">Need Help?</h3>
+          <p class="text-5xl text-gray-100 font-bold tracking-wider uppercase md:text-8xl">Services</p>
         </div>
-        <i data-modal="services" class="absolute right-0 cursor-pointer menu-close fa fa-times text-6xl text-gray-200"></i>
+        <i data-modal="services" class="absolute right-0 cursor-pointer menu-close fa fa-times text-3xl text-gray-200 md:text-6xl"></i>
       </div>
-      <div class="container grid grid-flow-row grid-cols-3 gap-16 mx-auto mt-20 relative service-container">
+      <div class="container grid grid-flow-row grid-cols-1 gap-16 mx-auto mt-20 relative service-container md:grid-cols-3">
         <div class="service-card relative">
           <div class="service-item relative cursor-pointer">
             <div class="bg-gray-800 flex flex-col justify-center items-center p-10 rounded-lg">
@@ -273,7 +276,7 @@
           <div class="service-item relative">
             <div class="bg-gray-800 flex flex-col justify-center items-center p-10 rounded-lg">
               <img src="./images/icons/icon-react.png" alt="Service Icon" class="h-48" />
-              <h2 class="text-5xl text-white font-bold tracking-wider mt-6">React and React Native</h2>
+              <h2 class="text-5xl text-white font-bold tracking-wider mt-6 text-center">React and Native</h2>
               <p class="text-2xl text-center text-gray-200 font-normal leading-loose mt-2">
                 Using the best tecnology saves you the budget for spending with meaninfull things. How can we use our best tecnology to help you?
               </p>
@@ -283,13 +286,13 @@
       </div>
     </div>
     <!-- Portfolio Modules -->
-    <div id="portfolio" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 pb-48">
+    <div id="portfolio" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 p-10 md:pb-48">
       <div class="container flex justify-center items-start mx-auto relative">
-        <div class="flex flex-col items-center justify-start page-title">
-          <h3 class="text-gray-700 text-12xl font-bold tracking-widest uppercase">My Works</h3>
-          <p class="text-gray-100 text-8xl font-bold tracking-wider uppercase">Portfolio</p>
+        <div class="mt-24 flex flex-col items-center justify-start page-title md:mt-0">
+          <h3 class="text-6xl text-gray-700 font-bold tracking-widest uppercase md:text-12xl">My Works</h3>
+          <p class="text-5xl text-gray-100 font-bold tracking-wider uppercase md:text-8xl">Portfolio</p>
         </div>
-        <i data-modal="portfolio" class="absolute right-0 cursor-pointer menu-close fa fa-times text-6xl text-gray-200"></i>
+        <i data-modal="portfolio" class="absolute right-0 cursor-pointer menu-close fa fa-times text-3xl text-gray-200 md:text-6xl"></i>
       </div>
       <div class="container flex justify-between items-start mx-auto mt-10">
         <section class="relative slick-portfolio slider">
@@ -297,35 +300,36 @@
           <div>
             <div class="relative rounded-lg flex flex-col p-10 pt-6 bg-gray-800">
               <div class="flex justify-between flex-col">
-                <div class="w-full flex justify-between items-end">
-                  <div class="w-7/12 flex flex-col">
+                <div class="w-full flex justify-between items-end flex-col md:flex-row">
+                  <div class="w-full flex flex-col md:w-7/12">
                     <div class="section-title relative">
-                      <h1 class="text-6xl text-gray-200 font-bold">Braccus</h1>
+                      <h1 class="text-5xl text-gray-200 font-bold md:text-6xl">Braccus</h1>
                     </div>
-                    <p class="text-3xl text-gray-300 leading-loose">
+                    <p class="mt-2 text-2xl text-gray-300 leading-relaxed md:leading-loose md:text-3xl md:mt-0">
                       Get insights about your business and advertising.
                     </p>
                   </div>
-                  <div class="w-5/12 grid grid-flow-row grid-cols-4 gap-10 mt-10 text-center">
-                    <div class="flex flex-col">
+                  <div class="w-full grid grid-flow-row grid-cols-2 gap-6 mt-6 text-center md:gap-10 md:mt-10 md:w-5/12 md:grid-cols-4">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Language</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">HTML / CSS</p>
+                      <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">HTML / CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Design Framework</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">Tailwind</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">Tailwind</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Avaible for Sale</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">No</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">No</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Developed at</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">2020</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">2020</p>
                     </div>
                   </div>
                 </div>
-                <img src="./images/portfolio/portfolio-braccus.png" alt="Portfolio Item" class="mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-braccus.png" alt="Portfolio Item" class="slick-image mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-braccus-mobile.png" alt="Portfolio Item" class="slick-image-mobile mt-10 rounded-b-lg" />
               </div>
             </div>
           </div>
@@ -333,35 +337,36 @@
           <div>
             <div class="relative rounded-lg flex flex-col p-10 pt-6 bg-gray-800">
               <div class="flex justify-between flex-col">
-                <div class="w-full flex justify-between items-end">
-                  <div class="w-7/12 flex flex-col">
+                <div class="w-full flex flex-col justify-between items-end md:flex-row">
+                  <div class="w-full flex flex-col md:w-7/12">
                     <div class="section-title relative">
-                      <h1 class="text-6xl text-gray-200 font-bold">Sure Solutions</h1>
+                      <h1 class="text-5xl text-gray-200 font-bold md:text-6xl">Sure Solutions</h1>
                     </div>
-                    <p class="text-3xl text-gray-300 leading-loose">
+                    <p class="mt-2 text-2xl text-gray-300 leading-relaxed md:leading-loose md:text-3xl md:mt-0">
                       International tax focused lawyer office.
                     </p>
                   </div>
-                  <div class="w-5/12 grid grid-flow-row grid-cols-4 gap-10 mt-10 text-center">
-                    <div class="flex flex-col">
+                  <div class="w-full grid grid-flow-row grid-cols-2 gap-6 mt-6 text-center md:gap-10 md:mt-10 md:w-5/12 md:grid-cols-4">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Language</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">HTML / CSS</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">HTML / CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Design Framework</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">Tailwind</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">Tailwind</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Avaible for Sale</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">No</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">No</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Developed at</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">2020</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">2020</p>
                     </div>
                   </div>
                 </div>
-                <img src="./images/portfolio/portfolio-sure.png" alt="Portfolio Item" class="mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-sure.png" alt="Portfolio Item" class="slick-image mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-sure-mobile.png" alt="Portfolio Item" class="slick-image-mobile mt-10 rounded-b-lg" />
               </div>
             </div>
           </div>
@@ -369,35 +374,36 @@
           <div>
             <div class="relative rounded-lg flex flex-col p-10 pt-6 bg-gray-800">
               <div class="flex justify-between flex-col">
-                <div class="w-full flex justify-between items-end">
-                  <div class="w-7/12 flex flex-col">
+                <div class="w-full flex flex-col justify-between items-end md:flex-row">
+                  <div class="w-full flex flex-col md:w-7/12">
                     <div class="section-title relative">
-                      <h1 class="text-6xl text-gray-200 font-bold">Janno</h1>
+                      <h1 class="text-5xl text-gray-200 font-bold md:text-6xl">Janno</h1>
                     </div>
-                    <p class="text-3xl text-gray-300 leading-loose">
+                    <p class="mt-2 text-2xl text-gray-300 leading-relaxed md:leading-loose md:text-3xl md:mt-0">
                       Organize your data and depart in peace.
                     </p>
                   </div>
-                  <div class="w-5/12 grid grid-flow-row grid-cols-4 gap-10 mt-10 text-center">
-                    <div class="flex flex-col">
+                  <div class="w-full grid grid-flow-row grid-cols-2 gap-6 mt-6 text-center md:gap-10 md:mt-10 md:w-5/12 md:grid-cols-4">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Language</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">HTML / CSS</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">HTML / CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Design Framework</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">Tailwind</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">Tailwind</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Avaible for Sale</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">No</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">No</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Developed at</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">2020</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">2020</p>
                     </div>
                   </div>
                 </div>
-                <img src="./images/portfolio/portfolio-janno.png" alt="Portfolio Item" class="mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-janno.png" alt="Portfolio Item" class="slick-image mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-janno-mobile.png" alt="Portfolio Item" class="slick-image-mobile mt-10 rounded-b-lg" />
               </div>
             </div>
           </div>
@@ -405,35 +411,36 @@
           <div>
             <div class="relative rounded-lg flex flex-col p-10 pt-6 bg-gray-800">
               <div class="flex justify-between flex-col">
-                <div class="w-full flex justify-between items-end">
-                  <div class="w-7/12 flex flex-col">
+                <div class="w-full flex flex-col justify-between items-end md:flex-row">
+                  <div class="w-full flex flex-col md:w-7/12">
                     <div class="section-title relative">
-                      <h1 class="text-6xl text-gray-200 font-bold">Elune</h1>
+                      <h1 class="text-5xl text-gray-200 font-bold md:text-6xl">Elune</h1>
                     </div>
-                    <p class="text-3xl text-gray-300 leading-loose">
+                    <p class="mt-2 text-2xl text-gray-300 leading-relaxed md:leading-loose md:text-3xl md:mt-0">
                       The Business Coming Soon Template.
                     </p>
                   </div>
-                  <div class="w-5/12 grid grid-flow-row grid-cols-4 gap-10 mt-10 text-center">
-                    <div class="flex flex-col">
+                  <div class="w-full grid grid-flow-row grid-cols-2 gap-6 mt-6 text-center md:gap-10 md:mt-10 md:w-5/12 md:grid-cols-4">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Language</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">HTML / CSS</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">HTML / CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Design Framework</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">Pure CSS</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">Pure CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Avaible for Sale</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">Yes</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">Yes</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Developed at</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">2019</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">2019</p>
                     </div>
                   </div>
                 </div>
-                <img src="./images/portfolio/portfolio-elune.png" alt="Portfolio Item" class="mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-elune.png" alt="Portfolio Item" class="slick-image mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-elune-mobile.png" alt="Portfolio Item" class="slick-image-mobile mt-10 rounded-b-lg" />
               </div>
             </div>
           </div>
@@ -441,35 +448,36 @@
           <div>
             <div class="relative rounded-lg flex flex-col p-10 pt-6 bg-gray-800">
               <div class="flex justify-between flex-col">
-                <div class="w-full flex justify-between items-end">
-                  <div class="w-7/12 flex flex-col">
+                <div class="w-full flex flex-col justify-between items-end md:flex-row">
+                  <div class="w-full flex flex-col md:w-7/12">
                     <div class="section-title relative">
-                      <h1 class="text-6xl text-gray-200 font-bold">Simposio de Redes</h1>
+                      <h1 class="text-5xl text-gray-200 font-bold md:text-6xl">Simposio de Redes</h1>
                     </div>
-                    <p class="text-3xl text-gray-300 leading-loose">
+                    <p class="mt-2 text-2xl text-gray-300 leading-relaxed md:leading-loose md:text-3xl md:mt-0">
                       IFRJ 2019 Network data event at Rio de Janeiro.
                     </p>
                   </div>
-                  <div class="w-5/12 grid grid-flow-row grid-cols-4 gap-10 mt-10 text-center">
-                    <div class="flex flex-col">
+                  <div class="w-full grid grid-flow-row grid-cols-2 gap-6 mt-6 text-center md:gap-10 md:mt-10 md:w-5/12 md:grid-cols-4">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Language</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">HTML / CSS</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">HTML / CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Design Framework</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">Pure CSS</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">Pure CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Avaible for Sale</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">No</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">No</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Developed at</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">2019</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">2019</p>
                     </div>
                   </div>
                 </div>
-                <img src="./images/portfolio/portfolio-simposio.png" alt="Portfolio Item" class="mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-simposio.png" alt="Portfolio Item" class="slick-image mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-simposio-mobile.png" alt="Portfolio Item" class="slick-image-mobile mt-10 rounded-b-lg" />
               </div>
             </div>
           </div>
@@ -477,35 +485,36 @@
           <div>
             <div class="relative rounded-lg flex flex-col p-10 pt-6 bg-gray-800">
               <div class="flex justify-between flex-col">
-                <div class="w-full flex justify-between items-end">
-                  <div class="w-7/12 flex flex-col">
+                <div class="w-full flex flex-col justify-between items-end md:flex-row">
+                  <div class="w-full flex flex-col md:w-7/12">
                     <div class="section-title relative">
-                      <h1 class="text-6xl text-gray-200 font-bold">Meu Whatsapp</h1>
+                      <h1 class="text-5xl text-gray-200 font-bold md:text-6xl">Meu Whatsapp</h1>
                     </div>
-                    <p class="text-3xl text-gray-300 leading-loose">
+                    <p class="mt-2 text-2xl text-gray-300 leading-relaxed md:leading-loose md:text-3xl md:mt-0">
                       Whatsapp link minifier and campaign tracker.
                     </p>
                   </div>
-                  <div class="w-5/12 grid grid-flow-row grid-cols-4 gap-10 mt-10 text-center">
-                    <div class="flex flex-col">
+                  <div class="w-full grid grid-flow-row grid-cols-2 gap-6 mt-6 text-center md:gap-10 md:mt-10 md:w-5/12 md:grid-cols-4">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Language</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">HTML / CSS</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">HTML / CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Design Framework</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">Pure CSS</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">Pure CSS</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Avaible for Sale</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">Yes</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">Yes</p>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-start md:items-center">
                       <p class="text-gray-300 text-lg">Developed at</p>
-                      <p class="text-gray-200 text-2xl font-bold mt-2">2019</p>
+                       <p class="text-gray-200 text-xl font-bold mt-2 md:text-2xl">2019</p>
                     </div>
                   </div>
                 </div>
-                <img src="./images/portfolio/portfolio-meuwhatsapp.png" alt="Portfolio Item" class="mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-meuwhatsapp.png" alt="Portfolio Item" class="slick-image mt-10 rounded-b-lg" />
+                <img src="./images/portfolio/portfolio-meuwhatsapp-mobile.png" alt="Portfolio Item" class="slick-image-mobile mt-10 rounded-b-lg" />
               </div>
             </div>
           </div>
@@ -513,23 +522,23 @@
       </div>
     </div>
     <!-- Node Modules -->
-    <div id="node" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 pb-48">
+    <div id="node" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 p-10 md:pb-48">
       <div class="container flex justify-center items-start mx-auto relative">
-        <div class="flex flex-col items-center justify-start page-title">
-          <h3 class="text-gray-700 text-12xl font-bold tracking-widest uppercase">All Open Source</h3>
-          <p class="text-gray-100 text-8xl font-bold tracking-wider uppercase">Node Modules</p>
+        <div class="mt-24 flex flex-col items-center justify-start page-title md:mt-0">
+          <h3 class="text-6xl text-gray-700 font-bold tracking-widest uppercase md:text-12xl">Open Source</h3>
+          <p class="text-5xl text-gray-100 font-bold tracking-wider uppercase md:text-8xl">Node Modules</p>
         </div>
-        <i data-modal="node" class="absolute right-0 cursor-pointer menu-close fa fa-times text-6xl text-gray-200"></i>
+        <i data-modal="node" class="absolute right-0 cursor-pointer menu-close fa fa-times text-3xl text-gray-200 md:text-6xl"></i>
       </div>
       <div class="container mx-auto flex flex-col">
         <div class="section-title relative">
-          <h1 class="text-6xl mt-48 text-gray-200 font-bold">React Tailwind</h1>
+          <h1 class="text-5xl mt-10 text-gray-200 font-bold md:text-6xl md:mt-48">React Tailwind</h1>
         </div>
-        <p class="text-3xl mt-4 text-gray-300 w-6/12 leading-loose">
+        <p class="text-2xl mt-4 text-gray-300 w-full leading-relaxed md:w-6/12 md:leading-loose md:text-3xl">
           Developed for React.js with special design focus for the Tailwind CSS framework, I have developed some reusable components. You can find the list of components here.
         </p>
       </div>
-      <div class="container flex justify-between items-start mx-auto mt-20">
+      <div class="container flex justify-between items-start mx-auto mt-10 md:mt-20">
         <section class="relative slick-node slider">
           <div>
             <div class="relative npm-package mt-10">
@@ -579,13 +588,13 @@
       </div>
       <div class="container mx-auto flex flex-col">
         <div class="section-title relative">
-          <h1 class="text-6xl mt-48 text-gray-200 font-bold">Nest API</h1>
+          <h1 class="text-5xl mt-10 text-gray-200 font-bold md:text-6xl md:mt-48">Nest API</h1>
         </div>
-        <p class="text-3xl mt-4 text-gray-300 w-6/12 leading-loose">
+        <p class="text-2xl mt-4 text-gray-300 w-full leading-relaxed md:w-6/12 md:leading-loose md:text-3xl">
           Based on the Javascript API framework Nest.js, I have developed some reusable modules that can be imported inside the framework. You can find all modules below.
         </p>
       </div>
-      <div class="container flex justify-between items-start mx-auto mt-20">
+      <div class="container flex justify-between items-start mx-auto mt-10 md:mt-20">
         <section class="slick-node slider">
           <div>
             <div class="relative npm-package mt-10">
@@ -635,23 +644,23 @@
       </div>
     </div>
     <!-- Medium Container -->
-    <div id="medium" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 pb-48">
+    <div id="medium" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 p-10 md:pb-48">
       <div class="container flex justify-center items-start mx-auto relative">
-        <div class="flex flex-col items-center justify-start page-title">
-          <h3 class="text-gray-700 text-12xl font-bold tracking-widest uppercase">Always Learning</h3>
-          <p class="text-gray-100 text-8xl font-bold tracking-wider uppercase">Medium Articles</p>
+        <div class="mt-24 flex flex-col items-center justify-start page-title md:mt-0">
+          <h3 class="text-6xl text-gray-700 font-bold tracking-widest uppercase md:text-12xl">My Articles</h3>
+          <p class="text-5xl text-gray-100 font-bold tracking-wider uppercase md:text-8xl">Medium</p>
         </div>
-        <i data-modal="medium" class="absolute right-0 cursor-pointer menu-close fa fa-times text-6xl text-gray-200"></i>
+        <i data-modal="medium" class="absolute right-0 cursor-pointer menu-close fa fa-times text-3xl text-gray-200 md:text-6xl"></i>
       </div>
       <div class="container mx-auto flex flex-col">
         <div class="section-title relative">
-          <h1 class="text-6xl mt-48 text-gray-200 font-bold">React Articles</h1>
+          <h1 class="text-5xl mt-10 text-gray-200 font-bold md:text-6xl md:mt-48">React Articles</h1>
         </div>
-        <p class="text-3xl mt-4 text-gray-300 w-6/12 leading-loose">
+        <p class="text-2xl mt-4 text-gray-300 w-full leading-relaxed md:w-6/12 md:leading-loose md:text-3xl">
           Checkout some of my articles about React.js and how to develop things from the very basics to some advanced contents.
         </p>
       </div>
-      <div class="container flex justify-between items-start mx-auto mt-20">
+      <div class="container flex justify-between items-start mx-auto mt-10 md:mt-20">
         <section class="relative slick-medium slider">
           <div>
             <div class="relative medium-article mt-10">
@@ -701,13 +710,13 @@
       </div>
       <div class="container mx-auto flex flex-col">
         <div class="section-title relative">
-          <h1 class="text-6xl mt-48 text-gray-200 font-bold">Design Articles</h1>
+          <h1 class="text-5xl mt-10 text-gray-200 font-bold md:text-6xl md:mt-48">Design Articles</h1>
         </div>
-        <p class="text-3xl mt-4 text-gray-300 w-6/12 leading-loose">
+        <p class="text-2xl mt-4 text-gray-300 w-full leading-relaxed md:w-6/12 md:leading-loose md:text-3xl">
           Checkout some of my articles about design and how to develop things from the very basics to some advanced contents.
         </p>
       </div>
-      <div class="container flex justify-between items-start mx-auto mt-20">
+      <div class="container flex justify-between items-start mx-auto mt-10 md:mt-20">
         <section class="relative slick-medium slider">
           <div>
             <div class="relative medium-article mt-10">
@@ -757,13 +766,13 @@
       </div>
       <div class="container mx-auto flex flex-col">
         <div class="section-title relative">
-          <h1 class="text-6xl mt-48 text-gray-200 font-bold">Nest Articles</h1>
+          <h1 class="text-5xl mt-10 text-gray-200 font-bold md:text-6xl md:mt-48">Nest Articles</h1>
         </div>
-        <p class="text-3xl mt-4 text-gray-300 w-6/12 leading-loose">
+        <p class="text-2xl mt-4 text-gray-300 w-full leading-relaxed md:w-6/12 md:leading-loose md:text-3xl">
           Checkout some of my articles about Nest.js and how to develop things from the very basics to some advanced contents.
         </p>
       </div>
-      <div class="container flex justify-between items-start mx-auto mt-20">
+      <div class="container flex justify-between items-start mx-auto mt-10 md:mt-20">
         <section class="relative slick-medium slider">
           <div>
             <div class="relative medium-article mt-10">
@@ -813,41 +822,41 @@
       </div>
     </div>
     <!-- Contact Container -->
-    <div id="contact" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 pb-48">
+    <div id="contact" class="hidden absolute top-0 left-0 w-full min-h-screen bg-gray-900 z-50 p-10 md:pb-48">
       <div class="container flex justify-center items-start mx-auto relative">
-        <div class="flex flex-col items-center justify-start page-title">
-          <h3 class="text-gray-700 text-12xl font-bold tracking-widest uppercase">Let's Talk</h3>
-          <p class="text-gray-100 text-8xl font-bold tracking-wider uppercase">Contact</p>
+        <div class="mt-24 flex flex-col items-center justify-start page-title md:mt-0">
+          <h3 class="text-6xl text-gray-700 font-bold tracking-widest uppercase md:text-12xl">Let's Talk</h3>
+          <p class="text-5xl text-gray-100 font-bold tracking-wider uppercase md:text-8xl">Contact</p>
         </div>
-        <i data-modal="contact" class="absolute right-0 cursor-pointer menu-close fa fa-times text-6xl text-gray-200"></i>
+        <i data-modal="contact" class="absolute right-0 cursor-pointer menu-close fa fa-times text-3xl text-gray-200 md:text-6xl"></i>
       </div>
-      <div class="container mx-auto flex justify-around mt-20">
-        <div class="text-white w-6/12 flex flex-col">
+      <div class="container mx-auto flex flex-col justify-around mt-20 md:flex-row">
+        <div class="text-white w-full flex flex-col md:w-6/12">
           <div class="form-group">
             <label class="text-xl px-10 uppercase"for="input-name">Name</label>
             <input autocomplete="off" class="mt-2 rounded-full bg-gray-800 w-full px-10 py-8 bg-transparent text-gray-400 text-2xl" type="text" placeholder="Enter your name here" name="name" id="input-name"></input>
           </div>
-          <div class="mt-16 form-group">
+          <div class="mt-6 form-group md:mt-16">
             <label class="text-xl px-10 uppercase"for="input-email">Email</label>
             <input autocomplete="off" class="mt-2 rounded-full bg-gray-800 w-full px-10 py-8 bg-transparent text-gray-400 text-2xl" type="text" placeholder="Enter your email here" name="email" id="input-name"></input>
           </div>
-          <div class="mt-16 form-group">
+          <div class="mt-6 form-group md:mt-16">
             <label class="text-xl px-10 uppercase"for="input-message">Mensagem</label>
             <textarea class="mt-2 rounded-main bg-gray-800 w-full px-10 py-8 bg-transparent text-gray-400 text-2xl resize-none" type="text" placeholder="Enter your message here" name="name" id="input-name" rows="3"></textarea>
           </div>
-          <button class="form-submit mt-16 px-20 py-8 rounded-full bg-gray-800">Send message</button>
+          <button class="form-submit mt-6 px-20 py-8 rounded-full bg-gray-800 md:mt-16">Send message</button>
         </div>
-        <div class="text-white rounded-main bg-gray-800 w-4/12 flex flex-col p-10">
-          <h1 class="text-5xl font-bold">Davi Brancol</h1>
-          <h4 class="text-4xl font-semibold text-primary-300">Fullstack Webmaster and Designer</h4>
+        <div class="text-white rounded-main bg-gray-800 w-full flex flex-col mt-20 p-10 md:w-4/12 md:mt-0">
+          <h1 class="text-4xl font-bold md:text-5xl">Davi Brancol</h1>
+          <h4 class="text-3xl font-semibold text-primary-300 md:text-4xl">Fullstack Webmaster and Designer</h4>
 
           <div class="mt-10 flex flex-col">
-            <p class="uppercase mt-2 text-gray-100 font-semibold text-2xl"><span class="mr-6 text-primary-300">Age:</span> 22</p>
-            <p class="uppercase mt-2 text-gray-100 font-semibold text-2xl"><span class="mr-6 text-primary-300">Residence:</span> Brazil</p>
-            <p class="uppercase mt-2 text-gray-100 font-semibold text-2xl"><span class="mr-6 text-primary-300">Status:</span> Working</p>
-            <p class="uppercase mt-2 text-gray-100 font-semibold text-2xl"><span class="mr-6 text-primary-300">Freelance:</span> Available</p>
-            <p class="uppercase mt-2 text-gray-100 font-semibold text-2xl"><span class="mr-6 text-primary-300">Phone:</span> +55 (11) 96516-0306</p>
-            <p class="uppercase mt-2 text-gray-100 font-semibold text-2xl"><span class="mr-6 text-primary-300">Email:</span> daviduartebrancol@gmail.com</p>
+            <p class="uppercase mt-2 text-gray-100 font-semibold text-lg md:text-2xl"><span class="mr-4 text-primary-300">Age:</span> 22</p>
+            <p class="uppercase mt-2 text-gray-100 font-semibold text-lg md:text-2xl"><span class="mr-4 text-primary-300">Residence:</span> Brazil</p>
+            <p class="uppercase mt-2 text-gray-100 font-semibold text-lg md:text-2xl"><span class="mr-4 text-primary-300">Status:</span> Working</p>
+            <p class="uppercase mt-2 text-gray-100 font-semibold text-lg md:text-2xl"><span class="mr-4 text-primary-300">Freelance:</span> Available</p>
+            <p class="uppercase mt-2 text-gray-100 font-semibold text-lg md:text-2xl"><span class="mr-4 text-primary-300">Phone:</span> +55 (11) 96516-0306</p>
+            <p class="uppercase mt-2 text-gray-100 font-semibold text-lg md:text-2xl"><span class="mr-4 text-primary-300">Email:</span> daviduartebrancol@gmail.com</p>
           </div>
         </div>
       </div>
