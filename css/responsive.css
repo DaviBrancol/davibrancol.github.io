@@ -1,423 +1,84 @@
-@media (max-width: 771px) {
-  /**
-    * Product: Elune
-    * Description: Coming Soon Template
-    * Author: Davi Brancol
-    * Author URL: https://themeforest.net/user/brancol
-    * Version: v1.0.0
-    * License: Licensed by Themeforest - Themeforest Licenses can be found at https://themeforest.net/licenses
-    */
-
-  /*----------- Indexes -----------*/
-
-  /**
-  * General
-  * Navbar - Sidebar
-  * Countdown
-  * Introduce Header
-  * Header
-  * Footer
-  * Copyright
-  * Sidearea
-    * Section
-    * About
-    * Services
-    * Contact
-  * Settings
+/**
+  * Product: Elune
+  * Description: Coming Soon Template
+  * Author: Davi Brancol
+  * Author URL: https://themeforest.net/user/brancol
+  * Version: v1.0.0
+  * License: Licensed by Themeforest - Themeforest Licenses can be found at https://themeforest.net/licenses
   */
 
-  /*------------------------------------
-    General
-  ------------------------------------*/
-  * {
-    box-sizing: border-box;
+/*----------- Indexes -----------*/
+
+/**
+ * General
+ * Preloader
+ * Main Page
+ * Navbar
+ * Transition Overlay
+ * Service
+ * Resume
+ * NPM Package
+ * Slick Carousel
+ * Circle Animation
+ */
+
+/*------------------------------------
+  General
+------------------------------------*/
+
+@media (max-width: 771px) {
+  .page-title p {
+    margin-top: -3.5rem;
   }
 
-  html {
-    font-size: 62.5%;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
+  .menu-close {
+    top: 0;
   }
 
-  body {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.4rem;
-    color: #262626;
-    line-height: 1.857143;
-    box-sizing: border-box;
+  .service-item:hover {
+    transform: translateY(-30px);
   }
 
-  button {
-    outline: none;
-  }
-
-  ul,
-  ol {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    padding: 0;
-  }
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    line-height: inherit;
-  }
-
-  main {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
-
-  .main-overlay {
+  nav {
+    width: 100%;
+    background-color: #333;
     position: absolute;
-    background-color: rgba(0,0,0,0.7);
-    width: 100vw;
-    height: 100vh;
-  }
-  
-
-  /*------------------------------------
-    Navbar - Sidebar
-  ------------------------------------*/
-
-  #body.side-open navbar {
-    right: 0;
+    left: 0;
+    top: 70px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
   }
 
-  navbar {
+  nav.active {
+    max-height: 100vh;
+  }
+
+  nav > ul {
+    flex-direction: column;
+  }
+
+  nav > ul > li {
+    width: 100%;
+  }
+
+  .slick-slide {
+    margin: 0px 5px;
+  }
+
+  .slick-slide .slick-image {
     display: none;
   }
 
-  /*------------------------------------
-    Countdown
-  ------------------------------------*/
+  .slick-slide .slick-image-mobile {
+    display: block;
+  }
 
-  .countdown-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: -15px;
+  .slick-arrow {
+    display: none;
   }
-  
-  .countdown-container > div {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  
-  .countdown-container > div > h2 {
-    font-size: 36px;
-    text-align: center;
-  }
-  
-  .countdown-container > div > h3 {
-    font-size: 18px;
-    text-align: center;
+
+  .form-submit {
     width: 100%;
-    font-weight: 400;
-  }
-  
-
-  /*------------------------------------
-    Introduce Header
-  ------------------------------------*/
-
-  .introduce-header {
-    max-width: 100%;
-    padding: 15px;
-  }
-
-  .introduce-header h1 {
-    font-size: 28px;
-    margin-top: 0;
-    line-height: 32px;
-  }
-
-  .introduce-header h3 {
-    font-size: 14px;
-    text-align: justify;
-    line-height: 28px;
-  }
-
-  .introduce-header .call-to-action {
-    justify-content: space-between;
-    margin-top: 15px;
-    width: 100%;
-  }
-
-  .introduce-header button {
-    font-size: 14px;
-    padding: 15px 30px;
-    margin-right: 0;
-    width: 100%;
-    margin-top: 0;
-  }
-  /*------------------------------------
-  3. Header
-  ------------------------------------*/
-
-  header {
-    padding: 15px;
-  }
-
-  header h1 {
-    font-size: 26px;
-  }
-
-  header h1:after {
-    width: 50px;
-    height: 4px;
-    bottom: -9px;
-  }
-
-  #body.side-open header h1 {
-    opacity: 0;
-  }
-
-  header .fa {
-    font-size: 26px;
-  }
-
-  /*------------------------------------
-    Footer
-  ------------------------------------*/
-
-  footer {
-    position: absolute;
-    width: 100%;
-    bottom: 15px;
-    padding: 0 15px;
-    z-index: 50;
-    flex-direction: column-reverse;
-  }
-
-  .social-media {
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .social-media i {
-    font-size: 2.6rem;
-    margin-right: 0;
-  }
-
-  /*------------------------------------
-    Copyright
-  ------------------------------------*/
-
-  .site-copyright {
-    font-weight: 300;
-    font-size: 1.6rem;
-  }
-
-  .site-copyright span {
-    font-weight: bold;
-  }
-
-  .site-copyright a {
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-  }
-
-  .site-copyright a:hover,
-  .site-copyright a:focus {
-    color: #47a9ff;
-    transition: color 0.2s ease;
-  }
-
-  /*------------------------------------
-    Sidearea
-  ------------------------------------*/
-
-  #body.side-open .elune-sidearea {
-    right: 0%;
-  }
-
-  .elune-sidearea {
-    right: -100%;
-    width: 100%;
-  }
-
-  /*------------------------------------
-    Sidearea - Section
-  ------------------------------------*/
-
-  .elune-sidearea .section {
-    width: 100%;
-    text-align: center;
-    padding: 50px 30px;
-    z-index: 100;
-    position: relative;
-  }
-
-  .elune-sidearea .section:nth-child(odd) {
-    background-color: #fff;
-  }
-
-  .elune-sidearea .section:nth-child(even) {
-    background-color: #f6f6f6;
-  }
-
-  .elune-sidearea .section h1 {
-    font-size: 28px;
-  }
-
-  .elune-sidearea .section h3 {
-    font-size: 18px;
-  }
-
-  .elune-sidearea .section p {
-    font-size: 16px;
-    text-align: center;
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: #333;
-  }
-
-  /*------------------------------------
-    Sidearea - About
-  ------------------------------------*/
-
-  .elune-sidearea .section.section-about p {
-    text-align: justify;
-  }
-
-  /*------------------------------------
-    Sidearea - Services
-  ------------------------------------*/
-
-  .elune-sidearea .section.section-services .service-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: justify;
-    margin-top: 15px;
-  }
-
-  .elune-sidearea .section.section-services .service-item * {
-    margin-top: 15px;
-  }
-
-  .elune-sidearea .section.section-services .service-item i {
-    font-size: 3.8rem;
-  }
-
-  .elune-sidearea .section.section-services .service-item h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    color: #333;
-    font-weight: 400;
-  }
-
-  .elune-sidearea .section.section-services .service-item p {
-    text-align: justify;
-    font-size: 1.4rem;
-    color: #555;
-  }
-
-  /*------------------------------------
-    Sidearea - Contact
-  ------------------------------------*/
-
-  .elune-sidearea .section.section-contact .contact-container {
-    flex-direction: column;
-  }
-
-  .elune-sidearea .section.section-contact .contact-container .contact-info {
-    margin-top: 15px;
-  }
-
-  .elune-sidearea .section.section-contact .contact-container i {
-    font-size: 36px;
-  }
-
-  .elune-sidearea .section.section-contact .contact-container h4 {
-    font-size: 14px;
-    color: #555;
-    margin-top: 15px;
-  }
-
-  .elune-sidearea .section.section-contact .contact-container h4:last-child {
-    margin-top: 5px;
-  }
-
-  .elune-sidearea .section.section-contact .contact-form {
-    margin-top: 30px;
-  }
-
-  .elune-sidearea .section.section-contact .form-control {
-    height: auto;
-    line-height: 20px;
-    padding: 16px 21px;
-    border: 0;
-    color: inherit;
-    font-size: 14px;
-    background: rgba(0, 0, 0, 0.03);
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: background-color 0.3s ease, border 0.3s ease,
-      color 0.3s ease;
-    -moz-transition: background-color 0.3s ease, border 0.3s ease,
-      color 0.3s ease;
-    -ms-transition: background-color 0.3s ease, border 0.3s ease,
-      color 0.3s ease;
-    -o-transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
-    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
-  }
-
-  .elune-sidearea .section.section-contact .contact-form input,
-  .elune-sidearea .section.section-contact .contact-form textarea {
-    background: 0 0;
-    border: 1px solid #e7e7e7;
-    color: #333;
-    padding: 15px 21px;
-  }
-
-  /*------------------------------------
-    Settings
-  ------------------------------------*/
-
-  .settings-cog {
-    top: 55px;
-  }
-
-  .settings-window {
-    top: 55px;
-  }
-
-  #body.side-open .settings-cog {
-    color: white;
-    background-color: #333;
-  }
-
-  #body.side-open .settings-window {
-    background-color: #333;
   }
 }

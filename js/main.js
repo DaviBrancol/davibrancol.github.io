@@ -33,6 +33,14 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 1,
         prevArrow: '<div class="slick-arrow slick-arrow-portfolio slick-arrow-left"><i class="fa fa-chevron-left"></i></div>',
         nextArrow: '<div class="slick-arrow slick-arrow-portfolio slick-arrow-right"><i class="fa fa-chevron-right"></i></div>',
+        responsive: [
+          {
+            breakpoint: 771,
+            settings: {
+              arrows: false,
+            },
+          },
+        ],
       })
     } else if (id === 'slick-node') {
       $('.slick-node').slick({
@@ -43,6 +51,15 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 1,
         prevArrow: '<div class="slick-arrow slick-arrow-left"><i class="fa fa-chevron-left"></i></div>',
         nextArrow: '<div class="slick-arrow slick-arrow-right"><i class="fa fa-chevron-right"></i></div>',
+        responsive: [
+          {
+            breakpoint: 771,
+            settings: {
+              slidesToShow: 1,
+              arrows: false,
+            },
+          },
+        ],
       })
     } else if (id === 'slick-medium') {
       $('.slick-medium').slick({
@@ -53,6 +70,15 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 1,
         prevArrow: '<div class="slick-arrow slick-arrow-left"><i class="fa fa-chevron-left"></i></div>',
         nextArrow: '<div class="slick-arrow slick-arrow-right"><i class="fa fa-chevron-right"></i></div>',
+        responsive: [
+          {
+            breakpoint: 771,
+            settings: {
+              slidesToShow: 1,
+              arrows: false,
+            },
+          },
+        ],
       })
     }
   }
@@ -64,6 +90,9 @@ jQuery(document).ready(function ($) {
     setTimeout(() => {
       $('#transition-overlay').removeClass('transition-fadeIn-active')
       $(`#${modal}`).removeClass('hidden')
+      $('#hamburger-close').addClass('hidden')
+      $('#hamburger-open').removeClass('hidden')
+      $('nav').removeClass('active')
       runSlick(`slick-${modal}`)
     }, 800)
     setTimeout(() => {
@@ -88,8 +117,16 @@ jQuery(document).ready(function ($) {
     Menu Toggle
   ------------------------------------*/
 
-  $('#menu-toggle-open').on('click', function (e) {
-    $('#body').addClass('side-open')
+  $('#hamburger-open').on('click', function (e) {
+    $('#hamburger-open').addClass('hidden')
+    $('#hamburger-close').removeClass('hidden')
+    $('nav').addClass('active')
+  })
+
+  $('#hamburger-close').on('click', function (e) {
+    $('#hamburger-close').addClass('hidden')
+    $('#hamburger-open').removeClass('hidden')
+    $('nav').removeClass('active')
   })
 
   $('#cta-open').on('click', function (e) {
